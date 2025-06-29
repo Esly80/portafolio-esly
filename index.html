@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark"> <!-- Se establece 'dark' como tema por defecto -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Esli de los Santos </title>
+
+    <!-- CDN de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CDN de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Script de JS que se ejecuta antes para evitar el parpadeo (flickering) del tema -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- ============== MENÚ DE NAVEGACIÓN =========== -->
+    <!-- ============================================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">👨‍💻 Esli de los Santos </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfil">🔥 Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">🎓 Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tecnologias">🛠 Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">🚀 Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#videos">🎬 Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">📩 Contacto</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <!-- Botón para cambiar el tema -->
+                        <button id="theme-toggle" class="btn theme-btn">
+                            <i class="fas fa-sun"></i> <!-- Icono inicial (sol) -->
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================= -->
+    <!-- ================== PERFIL =================== -->
+    <!-- ============================================= -->
+    <section id="perfil" class="container text-center py-5">
+        <h2 class="section-title">Desarrollador Frontend (UI/UX)</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZYt1VyhsFM5a5TZn7etVrno0qBtbd3P9NOA&s" class="profile-img my-4">
+        <h3>Esli de los Santos</h3>
+        <p class="lead">
+            👨‍💻 Ingeniera en Sistemas y Computación | 💾 Programación | 🌐 Frontend y Backend | 📊 Análisis de Datos
+        </p>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- =============== EXPERIENCIA ================= -->
+    <!-- ============================================= -->
+    <section id="experiencia" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Experiencia Profesional</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Innovate Solutions</h5>
+                            <h6 class="card-subtitle mb-2">Frontend Developer</h6>
+                            <p class="card-text">Tecnologías: React, TypeScript, GraphQL.</p>
+                            <p class="card-text"><small>Periodo: 2023 - 2025</small></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tech Dynamics</h5>
+                            <h6 class="card-subtitle mb-2">Full Stack Developer</h6>
+                            <p class="card-text">Tecnologías: Node.js, Express, MongoDB, Vue.js.</p>
+                            <p class="card-text"><small>Periodo: 2021 - 2023</small></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Corp</h5>
+                            <h6 class="card-subtitle mb-2">Data Analyst Intern</h6>
+                            <p class="card-text">Tecnologías: Python, Pandas, SQL.</p>
+                            <p class="card-text"><small>Periodo: 2020 - 2021</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- ================ TECNOLOGÍAS ================ -->
+    <!-- ============================================= -->
+    <section id="tecnologias" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-5">Stack Tecnológico</h2>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4 tech-icon">
+                    <i class="fab fa-html5 fa-4x" style="color: #E34F26;"></i>
+                    <p>🔵 HTML5</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 tech-icon">
+                    <i class="fab fa-css3-alt fa-4x" style="color: #1572B6;"></i>
+                    <p>🟣 CSS3</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 tech-icon">
+                    <i class="fab fa-js-square fa-4x" style="color: #F7DF1E;"></i>
+                    <p>⚫ JavaScript</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 tech-icon">
+                    <i class="fab fa-bootstrap fa-4x" style="color: #7952B3;"></i>
+                    <p>🔴 Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================= -->
+    <!-- ================= PROYECTOS ================= -->
+    <!-- ============================================= -->
+    <section id="proyectos" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Proyectos</h2>
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <img src="https://dummyimage.com/600x400/ff0000/ffffff.png&text=Proyecto+1" class="card-img-top" alt="Imagen del proyecto 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Dashboard Analítico</h5>
+                            <p class="card-text">Plataforma interactiva para visualización de datos en tiempo real.</p>
+                            <a href="#" class="btn btn-primary mt-auto align-self-center">🔍 Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <img src="https://dummyimage.com/600x400/ff0000/ffffff.png&text=Proyecto+2" class="card-img-top" alt="Imagen del proyecto 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">E-commerce de Moda</h5>
+                            <p class="card-text">Tienda online con pasarela de pagos y gestión de inventario.</p>
+                            <a href="#" class="btn btn-primary mt-auto align-self-center">🔍 Ver</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <img src="https://dummyimage.com/600x400/ff0000/ffffff.png&text=Proyecto+3" class="card-img-top" alt="Imagen del proyecto 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">App de Tareas</h5>
+                            <p class="card-text">Aplicación para organizar tareas diarias con sistema de notificaciones.</p>
+                            <a href="#" class="btn btn-primary mt-auto align-self-center">🔍 Ver</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- =================== VIDEOS ================== -->
+    <!-- ============================================= -->
+    <section id="videos" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Videos y Tutoriales</h2>
+            <div class="row">
+                <!-- Video 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/MJkdaVFHrto?si=9JxhxdNSMlbnHesq" title="YouTube video player" frameborder="0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">📌 ¿Qué es HTML?</h5>
+                            <p class="card-text">Una breve introducción al lenguaje de marcado fundamental de la web.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/wZniZEbPAzk?si=j3KpUb9fUgaAtuNn" title="YouTube video player" frameborder="0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">📌 ¿Qué es CSS?</h5>
+                            <p class="card-text">Descubre cómo dar estilo y diseño a tus páginas web con CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Video 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 animated-card">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/QoC4RxNIs5M?si=9Qs34FgPgmkfz8pZ" title="YouTube video player" frameborder="0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">📌 ¿Qué es JavaScript?</h5>
+                            <p class="card-text">Aprende los fundamentos del lenguaje que da vida a la web.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- ================== CONTACTO ================= -->
+    <!-- ============================================= -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- ================ FOOTER ===================== -->
+    <!-- ============================================= -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>© 2024 Esli de los Santos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- CDN de Bootstrap JS (requerido para el toggler del menú y otros componentes) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
